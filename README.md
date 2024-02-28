@@ -49,9 +49,10 @@ You can also prepare your custom dataset following the example scripts.
 [[example scripts]](https://drive.google.com/file/d/1eb7g2v0NkjlICYdiKbWRe2bjPj-bxree/view?usp=drive_link)
 
 ## Usage
-
+### Preparation
 1. To evaluate on DSTD1500, first download the zipped [annotations](https://drive.usercontent.google.com/download?id=1NnFu_x39ZvOc9Yn4ZipSMvZDySIz8jea&export=download&authuser=0&confirm=t&uuid=7f0a35b7-6813-419d-9783-3784e0c791ff&at=APZUnTXpmtOKqW6YtKAwPvW-KUVF:1709107009429).
-2. Pretrain WordLenSpotter
+### Training
+1. Pretrain WordLenSpotter
 
 ```
 python projects/WordLenSpotter/train_net.py \
@@ -59,31 +60,31 @@ python projects/WordLenSpotter/train_net.py \
   --config-file projects/WordLenSpotter/configs/WordLenSpotter-pretrain.yaml
 ```
 
-3. Fine-tune model on the mixed real dataset
+2. Fine-tune model on the mixed real dataset
 
 ```
 python projects/WordLenSpotter/train_net.py \
   --num-gpus 8 \
   --config-file projects/WordLenSpotter/configs/WordLenSpotter-mixtrain.yaml
 ```
-
-4. Fine-tune model
+### Fine-tune
+1. Fine-tune model
 
 ```
 python projects/WordLenSpotter/train_net.py \
   --num-gpus 8 \
   --config-file projects/WordLenSpotter/configs/WordLenSpotter-WordLenSpotter-finetune-dstd1500.yaml
 ```
-
-5. Evaluate WordLenSpotter
+### Evaluation
+1. Evaluate WordLenSpotter
 
 ```
 python projects/WordLenSpotter/train_net.py \
   --config-file projects/WordLenSpotter/configs/WordLenSpotter-finetune-dstd1500.yaml \
   --eval-only MODEL.WEIGHTS ./output/FINETUNE20K/model_final.pth
 ```
-
-6. Visualize the detection and recognition results
+### Visualize
+1. Visualize the detection and recognition results
 
 ```
 python demo/demo.py \
