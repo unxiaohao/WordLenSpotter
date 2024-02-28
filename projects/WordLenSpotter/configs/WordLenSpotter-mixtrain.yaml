@@ -1,0 +1,17 @@
+_BASE_: "Base-WordLenSpotter.yaml"
+MODEL:
+  WEIGHTS: "./output/PreTRAIN450K/model_final.pth"
+  SWINTS:
+    NUM_PROPOSALS: 600
+    NUM_CLASSES: 2
+DATASETS:
+  TRAIN: ("totaltext_train","icdar2015_train","icdar_2013_train","icdar_2017_validation_mlt","icdar_2017_mlt","dstd1500_train",)
+  TEST:  ("totaltext_test",)
+
+SOLVER:
+  STEPS: (100000,)
+  MAX_ITER: 150000
+  CHECKPOINT_PERIOD: 10000
+INPUT:
+  FORMAT: "RGB"
+OUTPUT_DIR: "./output/MixTRAIN150K"
