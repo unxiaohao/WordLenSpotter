@@ -3,8 +3,15 @@
 
 This is the official implementation of Paper: [Word length-aware text spotting: Enhancing detection and recognition in dense text image](https://arxiv.org/abs/2312.15690). 
 
-### Preparation
-To evaluate DSTD1500, first download the zipped [annotations](https://drive.usercontent.google.com/download?id=1NnFu_x39ZvOc9Yn4ZipSMvZDySIz8jea&export=download&authuser=0&confirm=t&uuid=7f0a35b7-6813-419d-9783-3784e0c791ff&at=APZUnTXpmtOKqW6YtKAwPvW-KUVF:1709107009429).
+## Preparation
+1. Downloaded images
+- The dense text spotting dataset (DSTD1500) in real reading scenarios can be downloaded [here](https://drive.google.com/file/d/1qajTH8h7BZaqdeKvzYQeRskRVNvLzldp/view?usp=drive_link).
+- Sample dataset images <img src="https://github.com/unxiaohao/WordLenSpotter/blob/main/demo/datasets_sample.png" style="zoom: 50%;" />
+
+2. You can also prepare your custom dataset following the example scripts.
+[[example scripts]](https://drive.google.com/file/d/1eb7g2v0NkjlICYdiKbWRe2bjPj-bxree/view?usp=drive_link)
+
+3. To evaluate DSTD1500, first download the zipped [annotations](https://drive.usercontent.google.com/download?id=1NnFu_x39ZvOc9Yn4ZipSMvZDySIz8jea&export=download&authuser=0&confirm=t&uuid=7f0a35b7-6813-419d-9783-3784e0c791ff&at=APZUnTXpmtOKqW6YtKAwPvW-KUVF:1709107009429).
 
 ## Models
 [WordLenSpotter-MIXTRAIN [config]](https://github.com/unxiaohao/WordLenSpotter/blob/main/projects/WordLenSpotter/configs/WordLenSpotter-mixtrain.yaml) \| [model_Google Drive](https://drive.google.com/file/d/1oI8fSImCfIJ7g3w1bwscWnsM16mTNhP8/view?usp=drive_link) 
@@ -44,12 +51,6 @@ datasets
 |_ evaluation
 |  |_ test_gt.zip
 ```
-Downloaded images
-- The dense text spotting dataset (DSTD1500) in real reading scenarios can be downloaded [here](https://drive.google.com/file/d/1qajTH8h7BZaqdeKvzYQeRskRVNvLzldp/view?usp=drive_link).
-- Sample dataset images <img src="https://github.com/unxiaohao/WordLenSpotter/blob/main/demo/datasets_sample.png" style="zoom: 50%;" />
-
-You can also prepare your custom dataset following the example scripts.
-[[example scripts]](https://drive.google.com/file/d/1eb7g2v0NkjlICYdiKbWRe2bjPj-bxree/view?usp=drive_link)
 
 ## Usage
 ### Training
