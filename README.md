@@ -43,6 +43,7 @@ datasets
 ```
 Downloaded images
 - The dense text spotting dataset (DSTD1500) in real reading scenarios can be downloaded [here](https://drive.google.com/file/d/1qajTH8h7BZaqdeKvzYQeRskRVNvLzldp/view?usp=drive_link).
+- Sample dataset images <img src="https://github.com/unxiaohao/WordLenSpotter/blob/main/demo/datasets_sample.png" style="zoom: 50%;" />
 
 You can also prepare your custom dataset following the example scripts.
 [[example scripts]](https://drive.google.com/file/d/1eb7g2v0NkjlICYdiKbWRe2bjPj-bxree/view?usp=drive_link)
