@@ -89,6 +89,8 @@ python demo/demo.py \
   --confidence-threshold 0.4 \
   --opts MODEL.WEIGHTS ./output/FINETUNE20K/model_final.pth
 ```
+The visualization results are shown in the figure:
+<img src="https://github.com/unxiaohao/WordLenSpotter/blob/main/demo/dstd1500_vis_02.jpg" style="zoom: 50%;" />
 
 ## Acknowlegement
 This project is based on [Adelaidet](https://github.com/aim-uofa/AdelaiDet), [Detectron2](https://github.com/facebookresearch/detectron2) and [SwinTextSpotter](https://github.com/mxin262/SwinTextSpotter).
