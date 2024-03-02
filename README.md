@@ -77,14 +77,7 @@ python projects/WordLenSpotter/train_net.py \
   --num-gpus 8 \
   --config-file projects/WordLenSpotter/configs/WordLenSpotter-WordLenSpotter-finetune-dstd1500.yaml
 ```
-### Evaluation
-Evaluate WordLenSpotter
 
-```
-python projects/WordLenSpotter/train_net.py \
-  --config-file projects/WordLenSpotter/configs/WordLenSpotter-finetune-dstd1500.yaml \
-  --eval-only MODEL.WEIGHTS ./output/FINETUNE20K/model_final.pth
-```
 ### Visualize
 Visualize the detection and recognition results
 
