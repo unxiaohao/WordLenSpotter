@@ -1,7 +1,7 @@
 
 # WordLenSpotter
 
-This is the official implementation of Paper: Word Length-aware Text Spotting: Enhancing Dense Text Detection and Recognition for Filmed Document Image. 
+This is the official implementation of Paper: Word Length-aware Text Spotting: Enhancing Dense Text Detection and Recognition for Camera-captured Document Image. 
 
 ## Preparation
 1. Downloaded images
