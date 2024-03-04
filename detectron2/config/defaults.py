@@ -595,7 +595,7 @@ _C.TEST.AUG.MAX_SIZE = 4000
 _C.TEST.AUG.FLIP = True
 
 _C.TEST.PRECISE_BN = CN({"ENABLED": False})
-_C.TEST.PRECISE_BN.NUM_ITER = 200
+_C.TEST.PRECISE_BN.NUM_ITER = 2000
 
 # ---------------------------------------------------------------------------- #
 # Misc options
