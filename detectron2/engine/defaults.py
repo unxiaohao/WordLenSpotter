@@ -12,8 +12,6 @@ since they are meant to represent the "common default behavior" people need in t
 import argparse
 import logging
 import os
-# os.environ["CUDA_VISIBLE_DEVICES"] = "2,3"
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 import sys
 from collections import OrderedDict
 from typing import Optional
